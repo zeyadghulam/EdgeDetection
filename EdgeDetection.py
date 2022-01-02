@@ -39,3 +39,7 @@ canny = cv2.Canny(blur, threshold1=180, threshold2=200)    #wider threshold == m
 cv2.imshow('Frame View', canny)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+########Export Edges############
+cv2.imwrite('result.jpg', canny)
